@@ -58,6 +58,10 @@
     justify-content: space-around;
 }
 
+.form-left{
+    display: flex;
+}
+
 .footer{
     font-family: Georgia, 'Times New Roman', Times, serif;
     border-top: 2px solid red;
