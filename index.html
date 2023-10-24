@@ -31,15 +31,21 @@
             <div class="circle"></div>
             <div class="circle"></div>
         </div>
+        <div class="hq-name">
+            <label id="name1">Hervian Try Putera</label>
+            <label id="name2">Hervian Try Putera</label>
+            <label id="name2">Hervian Try Putera</label>
+        </div>
     </section>
-    <section id="message-us" class="form">
+    <section id="message-us" name="message-us" class="form">
         <div class="form-left">
+            <form action="" name="message-form" onsubmit="return validateForm()">
             <table>
             <tr>
                 <td>Nama</td>
                 <td>:</td>
                 <td>
-                    <input type="text" name="Nama" id="nama" placeholder="Nama Anda">
+                    <input type="text" name="nama" id="nama" placeholder="Nama Anda">
                 </td>
             </tr>
             <tr>
@@ -53,32 +59,36 @@
                 <td>Jenis Kelamin</td>
                 <td>:</td>
                 <td>
-                <input type="radio" name="gender" id="">
-                <label for="gender">laki-Laki</label>
-                <input type="radio" name="gender" id="">
-                <label for="gender">Perempuan</label>
+                <input type="radio" name="gender" id="male">
+                <label for="male">laki-Laki</label>
+                <input type="radio" name="gender" id="female">
+                <label for="female">Perempuan</label>
                 </td>
             </tr>
             <tr>
                 <td>Pesan</td>
                 <td>:</td>
                 <td>
-                   <textarea name="" id="" cols="30" rows="10" placeholder="isi pesan anda"></textarea>
+                   <textarea name="messages" id="" cols="30" rows="10" placeholder="isi pesan anda"></textarea>
+                   <br>
+                   <input type="submit" id="tombol" name="tombol" value="submit">
+                   <p id="error"></p>
                 </td>
-            </tr>
-            <tr>
-                <td>
-                <input type="submit" name="submit" id="submit">
-            </td>
             </tr>
                 </table>
             </div>
-        <div class="form-right"></div>
+        <div class="form-right">
+            <textarea name="isi-pesan" id="" cols="50" rows="10">
+                <p>Nama: <span id="nama-pengirim"></span></p>
+                <p>Tanggal lahir: <span id="lahir-pengirim"></span></p>
+                <p>Jenis kelamin: <span id="gender-pengirim"></span></p>
+                <p>Pesan: <span id="pesan-pengirim"></span></p>
+            </textarea>
+        </form>
+        </div>
     </section>
     <section class="footer">
-        <center>
-            <p>made by Try.co</p>
-        </center>
+            <p>made by founder Try.co</p>
     </section>
     <script src="./js/script.js"></script>
 </body>

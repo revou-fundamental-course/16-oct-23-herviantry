@@ -37,13 +37,24 @@
     border-bottom: 2px solid red;
     background-image: url(../assets/Logo.png);
     background-repeat:no-repeat;
-    background-size: cover;
+    background-size: 100px;
+    background-position: center;
     height: 400px;
 }
 
 .headquarters{
     text-align: center;
+    margin-top: 3px;
     padding: 40px;
+    border-bottom: 2px solid red;
+    border-top: 1px solid red;
+}
+
+.hq-name{
+    display: flex;
+    gap: 295px;
+    margin-top: 10px;
+    margin-left: 150px;
 }
 
 .circle{
@@ -58,11 +69,25 @@
     justify-content: space-around;
 }
 
+.form{
+    display: flex;
+    margin: 30px 30px;
+    justify-content: space-between;
+}
+
 .form-left{
     display: flex;
+}
+
+.form-right{
+    margin-top: 75px;
+    width: 50%;
 }
 
 .footer{
     font-family: Georgia, 'Times New Roman', Times, serif;
     border-top: 2px solid red;
+    text-align: center;
+    color: white;
+    background-color: black;
 }
