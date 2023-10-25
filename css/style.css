@@ -1,3 +1,17 @@
+@media only screen and (max-width: 600px){
+    .header{
+        flex-direction: column;
+    }
+
+    .nav{
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .nav-logo img{
+        margin-bottom: 15px;
+    }
+}
 .header{
     display: flex;
     justify-content: space-between;
@@ -34,7 +48,6 @@
 }
 
 .banner{
-    border-bottom: 2px solid red;
     background-image: url(../assets/Logo.png);
     background-repeat:no-repeat;
     background-size: 100px;
@@ -42,9 +55,12 @@
     height: 400px;
 }
 
+.img{
+    border-bottom: 2px solid red;
+}
 .headquarters{
     text-align: center;
-    margin-top: 3px;
+    margin-top: 150px;
     padding: 40px;
     border-bottom: 2px solid red;
     border-top: 1px solid red;
@@ -80,8 +96,10 @@
 }
 
 .form-right{
-    margin-top: 75px;
-    width: 50%;
+    margin: 50px 150px ;
+    width: 45%;
+    height: 45%;
+    border: 1px solid black;
 }
 
 .footer{

@@ -1,13 +1,13 @@
 // function replaceName () {
-//     let name = prompt("Siapakah nama anda?","");
+//     let name = prompt("Halo, Dengan siapakah ini?","");
 //     document.getElementById("name").innerHTML = name;
 // }
 
 // document.getElementById('tombol').addEventListener("click", function() {
 //     replaceName();
+    
 // })
 // replaceName();
-// console.log(name);
 
 // let nameInput = document.getElementById("name-input");
 
@@ -37,9 +37,38 @@ function validateForm(){
     return false
 }
 
+
 function setSenderUI(nama, birthday, gender, messages){
     document.getElementById("nama-pengirim").innerHTML = nama;
     document.getElementById("lahir-pengirim").innerHTML = birthday;
     document.getElementById("gender-pengirim").innerHTML = gender;
     document.getElementById("pesan-pengirim").innerHTML = messages;
 }
+
+var dateTime = new Date();
+console.log(dateTime);
+document.getElementById("time").textContent = dateTime;
+
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n){
+    showDivs((slideIndex += n));
+}
+
+function showDivs(n){
+    var i;
+    var imgList = document.getElementsByClassName("img-slideshow");
+    if (n > imgList.length) slideIndex = 1;
+    else if(n < 1) slideIndex = imgList.length;
+
+    for (i = 0; i < imgList.length; i++){
+        imgList[i].style.display = 'none';
+    }
+
+    imgList[slideIndex - 1].style.display = "block";
+}
+
+setInterval(() => {
+plusDivs(1);
+}, 5000)

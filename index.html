@@ -20,8 +20,30 @@
     </header>
     <section class="banner">
         <div class="greetings">
-        <h1>Hi, This is our website to share our ideas for you!</h1>
+        <h1>Hi, <span id="name"></span> This is our website to share our ideas for you!</h1>
         <p>We hope you can find a new ideas from our website</p>
+    </div>
+
+    <div class="img">
+        <center>
+        <img 
+        class="img-slideshow" 
+        src="https://source.unsplash.com/random/1080x400?landscape&sig=1"
+        />
+
+        <img 
+        class="img-slideshow" 
+        src="https://source.unsplash.com/random/1080x400?landscape&sig=2"
+        />
+
+        <img 
+        class="img-slideshow" 
+        src="https://source.unsplash.com/random/1080x400?landscape&sig=3"
+        />
+        <br />
+        <button onclick="plusDivs(-1)">Previous</button>
+        <button onclick="plusDivs(1)">Next</button>
+    </center>
     </div>
     </section>
     <section class="headquarters">
@@ -71,19 +93,22 @@
                 <td>
                    <textarea name="messages" id="" cols="30" rows="10" placeholder="isi pesan anda"></textarea>
                    <br>
-                   <input type="submit" id="tombol" name="tombol" value="submit">
+                   <input type="submit" id="tombol" name="tombol" value="submit" onclick="setSenderUI">
                    <p id="error"></p>
                 </td>
             </tr>
                 </table>
             </div>
         <div class="form-right">
-            <textarea name="isi-pesan" id="" cols="50" rows="10">
-                <p>Nama: <span id="nama-pengirim"></span></p>
-                <p>Tanggal lahir: <span id="lahir-pengirim"></span></p>
-                <p>Jenis kelamin: <span id="gender-pengirim"></span></p>
-                <p>Pesan: <span id="pesan-pengirim"></span></p>
-            </textarea>
+            <td>
+                <tr>
+                    <p>Current Time: <span id="time"></span></p>
+                    <p>Nama: <span id="nama-pengirim"></span></p>
+                    <p>Tanggal lahir: <span id="lahir-pengirim"></span></p>
+                    <p>Jenis kelamin: <span id="gender-pengirim"></span></p>
+                    <p>Pesan: <span id="pesan-pengirim"></span></p>
+                </tr>
+            </td>
         </form>
         </div>
     </section>
