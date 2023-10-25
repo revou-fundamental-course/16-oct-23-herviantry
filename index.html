@@ -7,17 +7,114 @@
     <title>MY PAGE</title>
 </head>
 <body>
-    <div>
-        <nav class="navbar">
-            <a href="">Home</a>
-            <a href="">Profile</a>
-            <a href="">Logout</a>
-        </nav>
+    <header class="header">
+        <div class="nav-logo">
+            <img src="./assets/Logo.png" alt="Herviantryp-logo">
+        </div>
+        <div class="nav">
+            <a href="" class="nav-item">Home</a>
+            <a href="" class="nav-item">Our Ideas</a>
+            <a href="" class="nav-item">Portofolio</a>
+            <a href="#message-us" class="nav-item">Message Us</a>
+        </div>
+    </header>
+    <section class="banner">
+        <div class="greetings">
+        <h1>Hi, <span id="name"></span> This is our website to share our ideas for you!</h1>
+        <p>We hope you can find a new ideas from our website</p>
     </div>
-    
 
+    <div class="img">
+        <center>
+        <img 
+        class="img-slideshow" 
+        src="https://source.unsplash.com/random/1080x400?landscape&sig=1"
+        />
 
+        <img 
+        class="img-slideshow" 
+        src="https://source.unsplash.com/random/1080x400?landscape&sig=2"
+        />
 
+        <img 
+        class="img-slideshow" 
+        src="https://source.unsplash.com/random/1080x400?landscape&sig=3"
+        />
+        <br />
+        <button onclick="plusDivs(-1)">Previous</button>
+        <button onclick="plusDivs(1)">Next</button>
+    </center>
+    </div>
+    </section>
+    <section class="headquarters">
+        <h1>Our Team</h1>
+        <div class="hq-teams">
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+        </div>
+        <div class="hq-name">
+            <label id="name1">Hervian Try Putera</label>
+            <label id="name2">Hervian Try Putera</label>
+            <label id="name2">Hervian Try Putera</label>
+        </div>
+    </section>
+    <section id="message-us" name="message-us" class="form">
+        <div class="form-left">
+            <form action="" name="message-form" onsubmit="return validateForm()">
+            <table>
+            <tr>
+                <td>Nama</td>
+                <td>:</td>
+                <td>
+                    <input type="text" name="nama" id="nama" placeholder="Nama Anda">
+                </td>
+            </tr>
+            <tr>
+                <td>Tanggal Lahir</td>
+                <td>:</td>
+                <td>
+                    <input type="date" name="birthday">
+                </td>
+            </tr>
+            <tr>
+                <td>Jenis Kelamin</td>
+                <td>:</td>
+                <td>
+                <input type="radio" name="gender" id="male">
+                <label for="male">laki-Laki</label>
+                <input type="radio" name="gender" id="female">
+                <label for="female">Perempuan</label>
+                </td>
+            </tr>
+            <tr>
+                <td>Pesan</td>
+                <td>:</td>
+                <td>
+                   <textarea name="messages" id="" cols="30" rows="10" placeholder="isi pesan anda"></textarea>
+                   <br>
+                   <input type="submit" id="tombol" name="tombol" value="submit" onclick="setSenderUI">
+                   <p id="error"></p>
+                </td>
+            </tr>
+                </table>
+            </div>
+        <div class="form-right">
+            <td>
+                <tr>
+                    <p>Current Time: <span id="time"></span></p>
+                    <p>Nama: <span id="nama-pengirim"></span></p>
+                    <p>Tanggal lahir: <span id="lahir-pengirim"></span></p>
+                    <p>Jenis kelamin: <span id="gender-pengirim"></span></p>
+                    <p>Pesan: <span id="pesan-pengirim"></span></p>
+                </tr>
+            </td>
+        </form>
+        </div>
+    </section>
+    <section class="footer">
+            <p>made by founder Try.co</p>
+    </section>
     <script src="./js/script.js"></script>
 </body>
 </html>
