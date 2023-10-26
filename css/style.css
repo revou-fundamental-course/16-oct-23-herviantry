@@ -11,6 +11,25 @@
     .nav-logo img{
         margin-bottom: 15px;
     }
+
+    .circle{
+        margin-left: 5px;
+        gap: 1px;
+    }
+
+    .form{
+        flex-direction: column;
+        width: auto;
+        height: auto;
+    }
+
+    .form-right{
+        flex-direction: column;
+        border-radius: 5%;
+        margin: auto;
+        outline-style: double;
+    }
+
 }
 .header{
     display: flex;
@@ -60,7 +79,7 @@
 }
 .headquarters{
     text-align: center;
-    margin-top: 150px;
+    margin-top: 81px;
     padding: 40px;
     border-bottom: 2px solid red;
     border-top: 1px solid red;
@@ -68,9 +87,8 @@
 
 .hq-name{
     display: flex;
-    gap: 295px;
+    justify-content: space-around;
     margin-top: 10px;
-    margin-left: 150px;
 }
 
 .circle{
@@ -96,10 +114,10 @@
 }
 
 .form-right{
-    margin: 50px 150px ;
-    width: 45%;
-    height: 45%;
+    display: flex;
+    font-size: small;
     border: 1px solid black;
+    border-radius: 2%;
 }
 
 .footer{

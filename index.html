@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="./css/style.css">
     <title>MY PAGE</title>
 </head>
-<body>
+<body style="-webkit-text-stroke-width: thin;">
     <header class="header">
         <div class="nav-logo">
             <img src="./assets/Logo.png" alt="Herviantryp-logo">
@@ -28,17 +28,17 @@
         <center>
         <img 
         class="img-slideshow" 
-        src="https://source.unsplash.com/random/1080x400?landscape&sig=1"
+        src="https://source.unsplash.com/random/340x356?landscape&sig=1"
         />
 
         <img 
         class="img-slideshow" 
-        src="https://source.unsplash.com/random/1080x400?landscape&sig=2"
+        src="https://source.unsplash.com/random/340x356?landscape&sig=2"
         />
 
         <img 
         class="img-slideshow" 
-        src="https://source.unsplash.com/random/1080x400?landscape&sig=3"
+        src="https://source.unsplash.com/random/340x356?landscape&sig=3"
         />
         <br />
         <button onclick="plusDivs(-1)">Previous</button>
@@ -100,20 +100,22 @@
                 </table>
             </div>
         <div class="form-right">
-            <td>
-                <tr>
+        <table>
+            <tr>
+                <td>
                     <p>Current Time: <span id="time"></span></p>
                     <p>Nama: <span id="nama-pengirim"></span></p>
                     <p>Tanggal lahir: <span id="lahir-pengirim"></span></p>
                     <p>Jenis kelamin: <span id="gender-pengirim"></span></p>
                     <p>Pesan: <span id="pesan-pengirim"></span></p>
-                </tr>
-            </td>
+                </td>
+            </tr>
+        </table>
         </form>
         </div>
     </section>
     <section class="footer">
-            <p>made by founder Try.co</p>
+            <p>made by Try.co</p>
     </section>
     <script src="./js/script.js"></script>
 </body>
